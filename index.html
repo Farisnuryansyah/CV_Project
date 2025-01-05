@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <!-- Link to Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background-color: #1a202c;
+            color: #a0aec0;
+        }
+        .dark-mode .bg-white {
+            background-color: #2d3748;
+            color: #cbd5e0;
+        }
+        .dark-mode .bg-blue-600 {
+            background-color: #2c5282;
+        }
+        .card {
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-center py-6">
+        <h1 class="text-5xl font-extrabold">Curriculum Vitae</h1>
+        <p class="text-2xl font-medium">Faris Nuryansyah</p>
+        <button onclick="toggleDarkMode()" class="mt-4 bg-white text-blue-600 px-4 py-2 rounded-lg shadow-md hover:bg-blue-100">Toggle Dark Mode</button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6">
+        <!-- Profile Section -->
+        <section class="bg-white shadow-md rounded-lg p-6 mb-6 card">
+            <h2 class="text-3xl font-bold border-b-4 border-blue-600 pb-2 mb-4">Profil</h2>
+            <div class="flex items-center">
+                <img src="images/Profil.jpg" alt="Foto Profil" class="w-40 h-40 rounded-full mr-6 shadow-lg">
+                <p class="text-lg">"Mahasiswa Teknik Informatika dengan keahlian dalam pengembangan perangkat lunak dan basis data. Bersemangat menciptakan solusi teknologi inovatif dan berdampak positif, serta terus mengembangkan keahlian di bidang TI."</p>
+            </div>
+        </section>
+
+        <!-- Biodata -->
+        <section class="bg-white shadow-md rounded-lg p-6 mb-6 card">
+            <h2 class="text-3xl font-bold border-b-4 border-blue-600 pb-2 mb-4">Biodata</h2>
+            <ul class="list-disc list-inside text-lg">
+                    <strong>Nama :</strong>
+                    <span class="text-white-600">Faris Nuryansyah</span> <br>
+                    <strong>TTL :</strong>
+                    <span class="text-white-600">Kuningan 12 April 2005</span> <br>
+                    <strong>Usia :</strong>
+                    <span class="text-white-600">19 Tahun</span> <br>
+                    <strong>Agama :</strong>
+                    <span class="text-white-600">Islam</span> <br>
+                    <strong>Status :</strong>
+                    <span class="text-white-600">Belum Menikah</span> <br>
+                    <strong>Tinggi Badan :</strong>
+                    <span class="text-white-600">165 cm</span> <br>
+                    <strong>Berat Badan :</strong>
+                    <span class="text-white-600">48 kg</span>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section class="bg-white shadow-md rounded-lg p-6 mb-6 card">
+            <h2 class="text-3xl font-bold border-b-4 border-blue-600 pb-2 mb-4">Pendidikan</h2>
+            <ul class="list-disc list-inside text-lg">
+                <li>
+                    <strong>SDN Sukaresmi 05 Cikarang :</strong>
+                    <span class="text-white-600">[2011 - 2017]</span>
+                </li>
+                <li>
+                    <strong>SMPN 3 Cikarang :</strong>
+                    <span class="text-white-600">[2017 - 2020]</span>
+                </li>
+                <li>
+                    <strong>SMK Garuda Nusantara Tegal Gede :</strong>
+                    <span class="text-white-600">[2020 - 2023]</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="bg-white shadow-md rounded-lg p-6 mb-6 card">
+            <h2 class="text-3xl font-bold border-b-4 border-blue-600 pb-2 mb-4">Pengalaman Kerja</h2>
+            <ul class="list-disc list-inside text-lg">
+                <li>
+                    <strong>PT. Gunze Indonesia :</strong> Operator Produksi 
+                    <span class="text-white-600">[2023 - 2024]</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="bg-white shadow-md rounded-lg p-6 mb-6 card">
+            <h2 class="text-3xl font-bold border-b-4 border-blue-600 pb-2 mb-4">Keahlian</h2>
+            <ul class="list-disc list-inside text-lg">
+                <li>Melakukan overhaul pada kendaraan ringan.</li>
+                <li>Membaca gambar teknik.</li>
+                <li>Menggunakan alat ukur seperti multitester, micrometer, dan jangka sorong.</li>
+            </ul>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="bg-white shadow-md rounded-lg p-6 mb-6 card">
+            <h2 class="text-3xl font-bold border-b-4 border-blue-600 pb-2 mb-4">Portofolio</h2>
+            <p class="text-lg">-</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="bg-white shadow-md rounded-lg p-6 card">
+            <h2 class="text-3xl font-bold border-b-4 border-blue-600 pb-2 mb-4">Kontak</h2>
+            <p class="text-lg"><i class="fas fa-envelope"></i> farisn292@gmail.com</p>
+            <p class="text-lg"><i class="fas fa-phone"></i> +62 858-8204-5908</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-center py-4 mt-6">
+        <p class="text-lg">&copy; 2025 Faris Nuryansyah. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
